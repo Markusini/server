@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.min.css">
+    <title>Главная</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="logo-label">
+            <img src="../../img/logo.png" alt="TerraFirmaCreate" srcset="" class="logo">
+            <p class="label">TerraFirmaCreate</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <a class="tab" selected href="../main/index.html">Главная</a>
+        <a class="tab" href="../main/index.html">Новости</a>
+        <a class="tab" href="../map/index.html">Карта</a>
+        <a class="tab" href="../profile/index.html">Профиль</a>
+
+        <button class="tab menu" onclick="document.getElementById('page-header-menu').showModal()">
+            <img src="../../img/menu.svg" alt="" srcset="">
+        </button>
+    </header>
+
+    <dialog id="page-header-menu">
+        <ul>
+            <li>
+                <a class="tab" selected href="../main/index.html">Главная</a>
+            </li>
+            <li>
+                <a class="tab" href="../main/index.html">Новости</a>
+            </li>
+            <li>
+                <a class="tab" href="../map/index.html">Карта</a>
+            </li>
+            <li>
+                <a class="tab" href="../profile/index.html">Профиль</a>
+            </li>
+        </ul>
+    </dialog>
+
+    <main class="main-page">
+        <section class="blur">
+            <section class="content">
+                <h1>TerraFirmaCreate</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex.</p>
+                <button class="primary">Скачать лаунчер</button>
+            </section>
+        </section>
+    </main>
+
+    <script src="../../js/header.js"></script>
+</body>
+</html>

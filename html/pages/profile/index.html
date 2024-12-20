@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.min.css">
+    <title>Профиль</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="logo-label">
+            <img src="../../img/logo.png" alt="TerraFirmaCreate" srcset="" class="logo">
+            <p class="label">TerraFirmaCreate</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <a class="tab" href="../main/index.html">Главная</a>
+        <a class="tab" href="../main/index.html">Новости</a>
+        <a class="tab" href="../map/index.html">Карта</a>
+        <a class="tab" selected href="../profile/index.html">Профиль</a>
+
+        <button class="tab menu" onclick="document.getElementById('page-header-menu').showModal()">
+            <img src="../../img/menu.svg" alt="" srcset="">
+        </button>
+    </header>
+
+    <dialog id="page-header-menu">
+        <ul>
+            <li>
+                <a class="tab" href="../main/index.html">Главная</a>
+            </li>
+            <li>
+                <a class="tab" href="../main/index.html">Новости</a>
+            </li>
+            <li>
+                <a class="tab" href="../map/index.html">Карта</a>
+            </li>
+            <li>
+                <a class="tab" selected href="../profile/index.html">Профиль</a>
+            </li>
+        </ul>
+    </dialog>
+
+    <main class="page-content profile-page">
+        <div class="content">
+            <h1>Профиль</h1>
+            <div class="content">
+                <div class="avatar">
+                    <canvas class="player" id="skin-canvas"></canvas>
+                    <div class="outline">
+                        Забанен 01.01.2023
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Ник: <b>FieryCup</b></p>
+                    <p>Дата регистрации: <b>01.01.2023</b></p>
+                    <p>Почта: <b>admin@terrafirmacreate.ru</b></p>
+                    <div class="line">
+                        <button class="primary">Изменить скин</button>
+                        <button class="primary">Изменить плащ</button>
+                    </div>
+                    <div class="line">
+                        <button class="primary">Изменить пароль</button>
+                    </div>
+                    <!-- <div class="line">
+                        <button class="danger">Запросить удаление аккаунта</button>
+                    </div>
+                    <div class="line">
+                        <button class="danger">Отменить</button>
+                        <div class="outline">
+                            Акаунт будет удален через 00:03:54
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <section class="content">
+            <p>© 2023 FieryCup</p>
+            
+            <a class="contact" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                <img src="../../img/discord.svg" alt="Discord" srcset="">
+            </a>
+        </section>
+    </footer>
+
+
+    <script src="skinview3d.bundle.js"></script>
+    <script src="script.js"></script>
+
+    <script src="../../js/header.js"></script>
+</body>
+</html>
